@@ -1,4 +1,4 @@
-import = ["/home/plarpoon/.config/alacritty/themes/themes/catpuccin_mocha.toml"]
+general.import = ["/home/plarpoon/.config/alacritty/themes/themes/catpuccin_mocha.toml"]
 
 [font]
 size = 10.0
@@ -15,9 +15,10 @@ family = "FiraCode Nerd Font"
 [font.normal]
 family = "FiraCode Nerd Font"
 
-[shell]
+[terminal.shell]
 args = ["--login"]
-program = "/bin/zsh"
+#program = "/bin/zsh"
+program = "/bin/nu"
 
 [window]
 dynamic_title = true
