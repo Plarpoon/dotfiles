@@ -1,0 +1,29 @@
+general.import = ["/home/plarpoon/.config/alacritty/themes/themes/catpuccin_mocha.toml"]
+
+[font]
+size = 10.0
+
+[font.bold]
+family = "FiraCode Nerd Font"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font"
+
+[font.italic]
+family = "FiraCode Nerd Font"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+
+[terminal.shell]
+args = ["--login"]
+#program = "/bin/zsh"
+program = "/bin/nu"
+
+[window]
+dynamic_title = true
+opacity = 1.0
+
+[window.dimensions]
+columns = 150
+lines = 40

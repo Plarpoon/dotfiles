@@ -1,0 +1,25 @@
+vpn() {
+    # Define the VPN interface name
+    local vpn_interface="zcs-sviluppo"
+
+    # Check if the VPN interface is up (replace 'zcs-sviluppo' with your specific WireGuard interface name if different)
+    if ip a show "$vpn_interface" &> /dev/null; then
+        echo "The current state of the VPN is ON."
+        echo -n "Do you want to switch it OFF? (y/n): "
+        read response
+        if [[ "$response" =~ ^[Yy]$ ]]; then
+            sudo wg-quick down /etc/wireguard/"$vpn_interface".conf && echo "VPN is now OFF."
+        else
+            echo "No changes made."
+        fi
+    else
+        echo "The current state of the VPN is OFF."
+        echo -n "Do you want to switch it ON? (y/n): "
+        read response
+        if [[ "$response" =~ ^[Yy]$ ]]; then
+            sudo wg-quick up /etc/wireguard/"$vpn_interface".conf && echo "VPN is now ON."
+        else
+            echo "No changes made."
+        fi
+    fi
+}

@@ -1,0 +1,77 @@
+clear
+exit
+clear
+gpg --full-generate-key
+gpg --list-secret-keys --keyid-format=long
+gpg --armor --export 817D2E6F0B3CDADB711D890C799A90FF69415E18
+git config --global user.signingkey 817D2E6F0B3CDADB711D890C799A90FF69415E18
+git config --global commit.gpgsign true
+git config --global tag.gpgSign true
+nvim .config/nushell/env.nu
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim and nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim ; nvim
+clear
+htop
+clear
+btop
+sudo rpm-ostree install btop
+cd .config/nushell/
+ll
+ls
+cat env.nu
+nvim env.nu
+nvim .config/nushell/env.nu
+<\n>
+$env.GPG_TTY = (tty | str trim)
+nvim .config/nushell/env.nu
+clear
+nvim .config/nushell/env.nu
+echo $env.GPG_TTY
+nvim .config/nushell/config.nu
+ll
+cat .zshrc
+clear
+htop
+sudo rpm-ostree install gh
+cd .config/nushell/
+ls
+ls -a
+eza --color always
+btm
+btm --color gruvbox
+nvim alias.nu
+cat
+cat alias.nu
+bat alias.nu
+cat .zshrc
+exit
+neofetch
+help commands | where name == "neofetch"
+which neofetch
+source-env ~./config/nushell/alias.nu
+source-env ~/config/nushell/alias.nu
+source-env ~/.config/nushell/alias.nu
+neofetch
+source-env ~/.config/nushell/alias.nu
+neofetch
+fastfetch
+help aliases
+neofetch
+ll
+cat .zshrc
+sudo rpm-ostree install starship
+nvim .config/nushell/env.nu
+nvim .config/nushell/config.nu
+ll
+echo %0
+clear
+echo $0
+nvim .config/nushell/config.nu
+gh
+gh auth
+gh auth login
+cd ~/Workspace/dotfiles/
+ll
+git fetch
+git pull
